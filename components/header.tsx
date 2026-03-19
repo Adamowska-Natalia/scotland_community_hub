@@ -14,9 +14,6 @@ export function Header() {
           <Link href="/" className="text-foreground/80 hover:text-foreground transition-colors">
             Home
           </Link>
-          <Link href="/events" className="text-foreground/80 hover:text-foreground transition-colors">
-            Events
-          </Link>
           <Link href="/gallery" className="text-foreground/80 hover:text-foreground transition-colors">
             Gallery
           </Link>
