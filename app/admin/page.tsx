@@ -17,33 +17,12 @@ export default function AdminLoginPage() {
     <div className="min-h-screen flex flex-col">
       <Header />
 
-      <main className="flex-1 flex items-center justify-center py-16">
+      <main className="flex-1 flex items-center justify-center py-12">
         <div className="w-full max-w-md px-4">
           <div className="bg-card border border-border rounded-lg p-8">
-            <div className="text-center mb-8">
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-primary"
-                >
-                  <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
-                </svg>
-              </div>
-              <h1 className="text-2xl font-bold text-card-foreground mb-2">
-                Admin Login
-              </h1>
-              <p className="text-muted-foreground text-sm">
-                Sign in to manage community events and content
-              </p>
-            </div>
+            <h1 className="text-2xl font-bold text-card-foreground mb-6 text-center">
+              Admin Login
+            </h1>
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
@@ -58,7 +37,7 @@ export default function AdminLoginPage() {
                   id="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+                  className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                   placeholder="admin@example.com"
                   required
                 />
@@ -76,7 +55,7 @@ export default function AdminLoginPage() {
                   id="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
+                  className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-colors"
                   placeholder="Enter your password"
                   required
                 />
@@ -84,15 +63,11 @@ export default function AdminLoginPage() {
 
               <button
                 type="submit"
-                className="w-full bg-primary text-primary-foreground py-3 rounded-md font-medium hover:bg-primary/90 transition-colors"
+                className="w-full bg-primary text-primary-foreground py-3 rounded-md font-medium hover:opacity-90 transition-opacity"
               >
                 Sign In
               </button>
             </form>
-
-            <p className="text-muted-foreground text-xs text-center mt-6">
-              This area is restricted to community administrators only.
-            </p>
           </div>
         </div>
       </main>
